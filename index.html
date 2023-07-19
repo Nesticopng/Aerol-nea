@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/bootstrap.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>another airline</title>
+</head>
+<body>
+    <h1 class="text-center my-5 titulo">another airline</h1>
+    <div class="mx-5" id="alert">
+    <div class="alert-container"></div>
+    </div>
+    <div class="mx-2 px-5 py-3">
+        <div class="box">
+            <form id="viaje">
+                <div class="row px-4 py-5">
+                    <div class="col-lg mx-3">
+                        <span>Desde:</span>
+                        <select class="form-control" id="salida" name="salida">
+                            <option value="" selected>Seleccione la salida</option>
+                            <option value="Caracas, Venezuela">Caracas, Venezuela</option>
+                            <option value="Bogotá, Colombia">Bogotá, Colombia</option>
+                            <option value="Miami, United States">Miami, United States</option>
+                        </select>
+                    </div>
+                    <div class="col-lg mx-3">
+                        <span>Hacia:</span>
+                        <select class="form-control" id="hacia" name="hacia">
+                            <option value="" selected>Seleciona un destino</option>
+                            <option value="New York, United States">New York, United States</option>
+                            <option value="Los Angeles, United States">Los Angeles, United States</option>
+                            <option value="Monterey, México">Monterey, México</option>
+                            <option value="Cancún, México">Cancún, México</option>
+                            <option value="Buenos Aires, Argentina">Buenos Aires, Argentina</option>
+                            <option value="Córdoba, Argentina">Córdoba, Argentina</option>
+                            <option value="Madrid, España">Madrid, España</option>
+                            <option value="Canarias, España">Canarias, España</option>
+                        </select>
+                    </div>
+                    <div class="col-lg mx-3">
+                        <span>Ida:</span>
+                        <div><input type="date" id="ida-fecha" name="ida" value="2023-04-08" min="2023-04-30" max="2024-04-30" class="form-control"></div>
+                    </div>
+                    <div class="col-lg mx-3">
+                        <span>Vuelta:</span>
+                        <div><input type="date" id="vuelta-fecha" name="vuelta" value="2023-04-08" min="2023-05-02" max="2024-04-30" class="form-control"></div>
+                    </div>
+                    <div class="col-lg mx-3">
+                        <span>Pasajeros:</span>
+                        <div><input type="number" id="pasajeros" name="pasajeros" min="1" max="8" step="1" class="form-control"></div>
+                    </div>    
+                </div>
+                <div class="d-flex justify-content-center pb-5">
+                    <button id="submit" type="submit" class="btn btn-primary px-5">Agendar Vuelo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row mx-2 px-5 pt-5 d-flex justify-content-around" id="vuelos-section">
+        
+        
+
+    </div>
+    
+    <script src="/JS/app.js"></script>
+</body>
+</html>

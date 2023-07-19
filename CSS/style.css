@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Noto+Sans:wght@600&family=Poppins:wght@200&display=swap');
+
+*{
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #00d9ff, #0051ff, #003097, #001f61);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.titulo{
+    font-size: 4em;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Exo', sans-serif;
+}
+
+.box{
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.Titulo-Registro{
+    font-size: 1.8rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.Registro-Res{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.desc-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 7;
+}
+
+.boton{    
+    border: 2px solid #24b4fb;
+    background-color: #24b4fb;
+    border-radius: 0.9em;
+    width: 10rem;
+    padding: 0.8em 1.2em 0.8em 1em;
+    transition: all ease-in-out 0.2s;
+    font-size: 16px;
+    font-weight: bold;
+}
+       
+.bx{
+    font-size: 16px ;
+}
+       
+.boton:hover {
+    background-color: #0071e2;
+}
+
+.e{
+    background-color: #ff8019;
+    border: 2px solid #ff7300;
+}
+
+.e:hover{
+    background-color: #ff0000;
+}
+
